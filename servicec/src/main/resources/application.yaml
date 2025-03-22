@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: servicec
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://alfecjo:acfa@localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
+# Requisição de servicec para servicea - com autenticação:
+# curl -u alfecjo:acfa -X GET http://host.docker.internal:8083/helloServiceA
+
+# Requisição de servicec para serviceb que envia para servicea - com autenticação:
+#curl -u alfecjo:acfa -X GET http://host.docker.internal:8083/helloServiceB

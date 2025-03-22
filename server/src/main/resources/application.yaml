@@ -1,0 +1,21 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: server
+
+  authentication:
+    enabled: true
+    username: alfecjo
+    password: acfa
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    com.netflix.eureka: INFO
+    com.netflix.discovery: OFF

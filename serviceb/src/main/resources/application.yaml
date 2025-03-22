@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: serviceb
+    
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://alfecjo:acfa@localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
+# Requisição de serviceb para servicea - com autenticação:
+# curl -u alfecjo:acfa -X GET http://host.docker.internal:8082/helloServiceA
