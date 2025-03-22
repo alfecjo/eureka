@@ -1,4 +1,4 @@
-# Spring Feign Client & Eureka Integration App 🚀
+# Spring Feign Client & Eureka & Autentication Integration App 🚀
 
 Este repositório contém uma aplicação **Spring Boot** que utiliza o **Feign Client** para a comunicação entre microserviços, enquanto o **Eureka** serve como o servidor de descoberta de serviços. Com isso, a aplicação pode registrar-se automaticamente no Eureka e descobrir outros serviços de maneira dinâmica, sem a necessidade de configurar manualmente as URLs.
 
